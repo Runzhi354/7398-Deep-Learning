@@ -1,0 +1,9 @@
+python sr.py -p train -c config/sr_1.json
+python sr.py -p val -c config/sr_1.json
+
+python data/prepare_data.py  --path [dataset root]  --out celebahq --size 16,128 
+python data/prepare_data.py  --path dataset/31  --out dataset/31 --size 16,128 
+python data/prepare_data.py  --path dataset/1  --out dataset/1 --size 16,128 
+
+
+	
